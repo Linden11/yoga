@@ -34,7 +34,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 1;
+    z-index: 50;
     background-color: white;
 }
 
@@ -116,7 +116,7 @@ header {
     width: 35px;
     height: 33px;
     cursor: pointer;
-    z-index: 2;
+    z-index: 60;
 }
 
 .menu_btn>span,
@@ -351,8 +351,8 @@ h3 {
 }
 
 .image {
-    width: 160px;
-    height: 115px;
+    width: 50%;
+    display: flex;
 }
 
 .image img {
@@ -361,6 +361,9 @@ h3 {
 
 .about_us {
     padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .about_us h2 {
@@ -517,15 +520,18 @@ footer {
 }
 
 footer h3 {
-    margin: 30px 15px;
+    margin: 30px 15px 0;
     text-transform: uppercase;
     font-size: 18px;
     color: white;
 }
 
 footer p {
-    margin: 0 15px 100px;
-    max-width: 470px;
+    padding: 40px 15px;
+}
+
+.invisible {
+    display: none;
 }
 
 .rights {
@@ -535,4 +541,127 @@ footer p {
     background-color: #5364d8;
     color: #b7bffc;
     text-align: center;
+}
+
+@media (min-width:768px) {
+    .menu_btn {
+        display: none;
+    }
+
+    .menu_box {
+        width: auto;
+        height: auto;
+        display: flex;
+        position: static;
+        visibility: visible;
+        list-style: none;
+        text-align: center;
+        background-color: none;
+        transition: none;
+    }
+
+    .menu_bar {
+        padding-left: 30px;
+    }
+
+    .menu_item {
+        white-space: nowrap;
+    }
+
+    .reservation {
+        height: 600px;
+    }
+
+    .main_text {
+        padding-left: 60px;
+        width: 50%;
+        text-align: start;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .program {
+        padding-top: 125px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .container_program {
+        margin-top: 50px;
+        margin-bottom: 160px;
+    }
+
+    .container_class {
+        width: 355px;
+        height: 410px;
+        display: flex;
+    }
+
+    .container_class img {
+        width: 165px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    h3 {
+        margin: 20px 0;
+    }
+
+    .yoga_style {
+        padding-top: 10px;
+    }
+
+    .image {
+        width: 25%;
+    }
+
+    .about_us {
+        padding-top: 170px;
+        padding-bottom: 160px;
+    }
+
+    .text {
+        width: 50%;
+    }
+
+    .swiper {
+        width: 50%;
+    }
+
+    .text p {
+        padding-right: 80px;
+    }
+
+    .elements .banner {
+        padding-top: 120px;
+    }
+
+    .container_elements {
+        width: 162px;
+        height: 375px;
+    }
+
+    .container_elements h3 {
+        margin: 30px 0;
+    }
+
+    .container_elements p {
+        font-size: 16px;
+    }
+
+    footer h3 {
+        margin: 100px auto 60px 15px;
+    }
+
+    footer p {
+        width: 100%;
+    }
+
+    .invisible {
+        display: contents;
+    }
 }
