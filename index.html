@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon">
     <title>Yoga</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
 </head>
+
 <body>
-    
+
     <header>
         <div class="logo">
             <img src="./img/logo.png" alt="logo">
@@ -46,12 +51,13 @@
                         <div class="tc"><label for="name">Trial class</label></div>
                         <p><input type="text" id="name" placeholder="Enter your name"></p>
                         <p><input type="tel" placeholder="Enter your phone"></p>
-                        <p><select name="chose" id="" aria-placeholder="Chose your class">
-                            <option value="">Yoga for health</option>
-                            <option value="">Yoga for lose weight</option>
-                            <option value="">Yoga for children</option>
-                            <option value="">Yoga for elderly</option>
-                        </select></p>
+                        <p><select name="chose" id="">
+                                <option selected>Chose your class</option>
+                                <option value="1">Yoga for health</option>
+                                <option value="2">Yoga for lose weight</option>
+                                <option value="3">Yoga for children</option>
+                                <option value="4">Yoga for elderly</option>
+                            </select></p>
                         <button>Try it</button>
                     </fieldset>
                 </form>
@@ -71,7 +77,8 @@
                     <img src="./img/img-01.jpg" alt="health">
                     <div>
                         <h3>Yoga For Health</h3>
-                        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                         <p class="yoga_style">Ashtanga - Hatha</p>
                     </div>
                 </div>
@@ -80,7 +87,8 @@
                     <img src="./img/img-02.jpg" alt="health">
                     <div>
                         <h3>Yoga For Health</h3>
-                        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                         <p class="yoga_style">Ashtanga - Hatha</p>
                     </div>
                 </div>
@@ -89,7 +97,8 @@
                     <img src="./img/img-03.jpg" alt="health">
                     <div>
                         <h3>Yoga For Health</h3>
-                        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                         <p class="yoga_style">Ashtanga - Hatha</p>
                     </div>
                 </div>
@@ -98,7 +107,8 @@
                     <img src="./img/img-04.jpg" alt="health">
                     <div>
                         <h3>Yoga For Health</h3>
-                        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                         <p class="yoga_style">Ashtanga - Hatha</p>
                     </div>
                 </div>
@@ -141,9 +151,31 @@
 
         <section class="about_us">
             <h2>About us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor it in lorei voluptate velit esse cillum dolore eu fugiat nulla pariatur lorem ispum loting sokui.</p>
-            <div>
-                <img src="./img/img-13.jpg" alt="yoga">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor it in lorei voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur lorem ispum loting sokui.</p>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./img/img-13.jpg" alt="yoga">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/img-14.jpg" alt="yoga">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/img-15.jpg" alt="yoga">
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev">
+                    <img src="./icons/ico-09.png" alt="arrow">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="./icons/ico-10.png" alt="arrow">
+                </div>
             </div>
         </section>
 
@@ -156,7 +188,8 @@
 
                     <div>
                         <h3>IMPROVED OVERALL HEALTH</h3>
-                        <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                        <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea
+                            com.</p>
                     </div>
                 </div>
 
@@ -167,7 +200,8 @@
 
                     <div>
                         <h3>INCREASED CONCENTRATION</h3>
-                        <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                        <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea
+                            com.</p>
                     </div>
                 </div>
 
@@ -178,7 +212,8 @@
 
                     <div>
                         <h3>BLANCE <br> YOUR MIND</h3>
-                        <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                        <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea
+                            com.</p>
                     </div>
                 </div>
 
@@ -189,7 +224,8 @@
 
                     <div>
                         <h3>SLEEP <br> BETTER</h3>
-                        <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                        <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea
+                            com.</p>
                     </div>
                 </div>
 
@@ -200,7 +236,8 @@
 
                     <div>
                         <h3>WEIGHT <br> LOSS</h3>
-                        <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                        <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea
+                            com.</p>
                     </div>
                 </div>
 
@@ -211,7 +248,8 @@
 
                     <div>
                         <h3>STRENGTHENS <br> YOUR BONES</h3>
-                        <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                        <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea
+                            com.</p>
                     </div>
                 </div>
 
@@ -222,7 +260,8 @@
 
                     <div>
                         <h3>INCREASED FLEXIBILITY</h3>
-                        <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                        <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea
+                            com.</p>
                     </div>
                 </div>
 
@@ -233,7 +272,8 @@
 
                     <div>
                         <h3>LOWER BLOOD PRESSURE</h3>
-                        <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                        <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea
+                            com.</p>
                     </div>
                 </div>
             </div>
@@ -262,7 +302,7 @@
                         <p><span><span class="dollar">$ </span> 69</span> / month</p>
                     </div>
 
-                    <div  class="schedule">
+                    <div class="schedule">
                         <p>ENTRY DATE: MON – FRI</p>
                         <div class="create-line"></div>
                         <p>ENTRY TIME: 8A.M – 8P.M</p>
@@ -278,7 +318,7 @@
                         <p><span><span class="dollar">$ </span> 99</span> / month</p>
                     </div>
 
-                    <div  class="schedule">
+                    <div class="schedule">
                         <p>ENTRY DATE: MON – FRI</p>
                         <div class="create-line"></div>
                         <p>ENTRY TIME: 8A.M – 8P.M</p>
@@ -294,10 +334,26 @@
 
     <footer>
         <h3>About</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sunt quasi, cum quae doloribus nisi harum a officia, nihil natus, eos impedit necessitatibus cumque voluptatem repudiandae quod animi amet quas?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad m inim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut
+            aliquip ex ea commodo consequat.</p>
         <div class="rights">
-            <p>Copyright  ©  2016-2017 Yoga classes</p>
+            <span>Copyright © 2016-2017 Yoga classes</span>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 100,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+        });
+    </script>
 </body>
+
 </html>

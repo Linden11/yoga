@@ -184,13 +184,14 @@ main {
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .order {
-    margin-top: 40px;
-    width: 300px;
-    height: 395px;
+    margin-top: 30px;
+    width: 290px;
+    height: 390px;
     border: 1px solid black;
     border-radius: 15px;
     background-color: white;
@@ -204,9 +205,10 @@ fieldset {
 }
 
 .tc {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 5px;
+    margin-bottom: 25px;
     font-size: 26px;
+    line-height: 1;
     font-weight: 600;
     color: #5b6ceb;
     text-transform: uppercase;
@@ -214,8 +216,8 @@ fieldset {
 
 .order input, .order select {
     padding: 10px;
-    margin-bottom: 20px;
-    width: 240px;
+    margin-bottom: 18px;
+    width: 230px;
     height: 50px;
     font-weight: 300;
     color: #777777;
@@ -230,7 +232,7 @@ input:hover, select:hover {
     background-color: #bac0f1;
 }
 
-input:focus {
+input:focus, select:focus {
     outline: 0;
     border: 1px solid #5b6ceb;
 }
@@ -240,8 +242,9 @@ input:focus {
   }
 
 button {
-    margin-left: 70px;
+    margin-left: 60px;
     margin-top: 10px;
+    margin-bottom: 10px;
     width: 170px;
     height: 50px;
     font-size: 16px;
@@ -254,8 +257,12 @@ button {
     cursor: pointer;
 }
 
+button:focus {
+    background-color: #192aa0;
+}
+
 .main_text {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     padding: 0 50px;
     text-align: center;
     color: white;
@@ -276,7 +283,7 @@ h1 {
 }
 
 .program {
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 h2 {
@@ -289,8 +296,9 @@ h2 {
 }
 
 .program > p {
+    margin-top: 10px;
     font-family: FREESCPT;
-    line-height: 1.5;
+    line-height: 1;
     text-align: center;
     font-size: 40px;
     color: #777777;
@@ -322,7 +330,7 @@ h2 {
 }
 
 h3 {
-    margin: 30px 0;
+    margin: 25px 0;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.5;
@@ -332,7 +340,7 @@ h3 {
 
 .yoga_style {
     color: #999999;
-    line-height: 3;
+    padding-top: 20px;
 }
 
 .gallery {
@@ -352,22 +360,47 @@ h3 {
 }
 
 .about_us {
-    padding: 30px 15px;
+    padding: 30px 0;
 }
 
 .about_us h2 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    padding: 0 15px;
     text-align: start;
 }
 
-.about_us div {
-    margin: 40px auto 30px;
-    width: 260px;
-    height: 135px;
+.about_us p {
+    padding: 0 15px;
 }
 
-.about_us img {
+.about_us .swiper {
+    padding: 35px 30px 25px;
+}
+
+.about_us .swiper .swiper-slide {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px #79787833;
+}
+
+.swiper-slide img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about_us .swiper-button-prev,
+.about_us .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 5px 5px 20px #79787833;
+}
+
+.about_us .swiper-button-prev::after,
+.about_us .swiper-button-next::after {
+    display: none;
 }
 
 .elements {
@@ -484,7 +517,7 @@ footer {
 }
 
 footer h3 {
-    margin: 35px 15px 40px;
+    margin: 30px 15px;
     text-transform: uppercase;
     font-size: 18px;
     color: white;
